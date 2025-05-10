@@ -100,3 +100,67 @@ header {
     margin: 5px 0;
     transition: all 0.3s ease;
 }
+
+/* ===== Sign-up Form Styles ===== */
+.signup-section {
+    background: var(--cream);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .signup-container {
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .logo-form {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+  }
+  
+  .logo-form span {
+    color: var(--sage);
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .signup-form input {
+    padding: 15px;
+    border: 1px solid var(--warm-gray);
+    border-radius: 4px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    transition: border 0.3s ease;
+  }
+  
+  .signup-form input:focus {
+    outline: none;
+    border-color: var(--sage);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    .signup-container {
+      padding: 30px 20px;
+      margin: 0 20px;
+    }
+    
+    .logo-form {
+      font-size: 2rem;
+    }
+  }

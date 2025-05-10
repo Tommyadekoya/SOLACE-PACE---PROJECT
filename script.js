@@ -52,3 +52,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', fadeInOnScroll);
     window.addEventListener('load', fadeInOnScroll);
 });
+
+// Form Submission Handler
+const signupForm = document.querySelector('.signup-form');
+if (signupForm) {
+  signupForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Add your form submission logic here
+    alert('Thank you for signing up! We\'ll contact you soon.');
+    this.reset();
+  });
+}
